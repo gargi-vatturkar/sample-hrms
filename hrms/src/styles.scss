@@ -7,3 +7,62 @@ body{
     display: flex;
     align-items: center;
 }
+
+.list-wrapper{
+    padding: 36px 48px;
+    background-color: #d6f4ff;
+    height: 100%;
+}
+
+.card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 12px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+
+    .fa{
+        color: #1976d2;
+        position: absolute;
+        right: 12px;
+    }
+
+    .img-wrapper{
+        text-align: center;
+        img{
+            width: 100px;
+            border-radius: 50%;
+            height: 100px;
+            object-fit: cover;
+        }
+    }
+
+    .name{
+        margin: 4px 0 8px;
+        font-size: 18px;
+    }
+
+    .info-cls{ 
+        font-size: 12px; 
+        padding: 0 12px;
+
+        hr{ margin: 4px 0; }
+
+        .col-3, .col-9{ padding: 0!important; }
+    }
+
+    .role-wrapper{ display: flex; justify-content: center; }
+}
+
+.card-wrapper{
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.outer-card{
+    background-color: #edfaff;
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+}

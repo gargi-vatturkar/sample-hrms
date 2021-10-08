@@ -6,6 +6,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
+    z-index: 100;
+    width: 100%;
+    position: fixed;
     
     .title{
         font-size: 20px;

@@ -1,0 +1,52 @@
+<div class="list-wrapper">
+    <div class="title">Profile</div>
+    <br>
+
+    <div class="outer-card">
+        <div *ngIf="userList.length > 0"
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-5  g-3">
+
+            <div class="col" *ngFor="let user of userList">
+                <div class="card">
+                    <i class="fa fa-caret-down"></i>
+                    <br>
+
+                    <div class="img-wrapper">
+                        <img alt="user-avatar" [src]="user.avatar"><br>
+
+                        <div class="name text-primary fw-bold">{{user.first_name + " " + user.last_name}}</div>
+                    </div>
+
+                    <div class="role-wrapper">
+                        <div class="badge bg-primary" *ngIf="user.role=='Testing Engineer'">{{user.role}}</div>
+                        <div class="badge bg-danger" *ngIf="user.role=='Management'">{{user.role}}</div>
+                        <div class="badge bg-warning" *ngIf="user.role=='Developer'">{{user.role}}</div>
+                        <div class="badge bg-success" *ngIf="user.role=='Financial Analyst'">{{user.role}}</div>
+                        <div class="badge bg-info" *ngIf="user.role=='Production Manager'">{{user.role}}</div>
+                    </div>
+
+                    <br>
+                    <div class="row info-cls">
+                        <div class="col-3 fw-bold">Id:</div>
+                        <div class="col-9">
+                            <div class="text-end">
+                                {{"EMP" + user.id}}</div>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    <div class="row info-cls">
+                        <div class="col-3 fw-bold">Email:</div>
+                        <div class="col-9">
+                            <div class="text-end">
+                                {{user.email}}</div>
+                        </div>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

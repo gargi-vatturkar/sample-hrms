@@ -1,18 +1,70 @@
-<div class="toolbar" role="banner">
-    <div class="flex-disp">
-        <i class="fa fa-users"></i>
-        <div class="title">DigiHRMS</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-users"></i>
+            <span class="title"> DigiHRMS </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <div class="icon-wrapper"><i class="fa fa-search"></i></div>
+                    <div class="resp-menu-names">Search</div>
+                </li>
+                <li class="nav-item">
+                    <div class="icon-wrapper"><i class="fa fa-th-large"></i></div>
+                    <div class="resp-menu-names">Menu</div>
+                </li>
+                <li class="nav-item">
+                    <div class="icon-wrapper"><i class="fa fa-bell"></i></div>
+                    <div class="resp-menu-names">Notifications</div>
+                </li>
+                <li class="nav-item">
+                    <div class="date-cls">{{currentTime}}</div>
+                </li>
+                <li class="nav-item name-item">
+                    <span><i class="fa fa-user-circle"></i></span>
+                    <span class="user-name">Johan Deo</span>
+                    <span><i class="fa fa-caret-down"></i></span>
+                </li>
+            </ul>
+
+        </div>
     </div>
+</nav>
 
-    <div class="flex-disp">
-        <div class="icon-wrapper"><i class="fa fa-search"></i></div>
-        <div class="icon-wrapper"><i class="fa fa-th-large"></i></div>
-        <div class="icon-wrapper"><i class="fa fa-bell"></i></div>
-
-        <div class="date-cls">{{currentTime}}</div>
-
-        <div><i class="fa fa-user-circle"></i></div>
-        <div class="user-name">Johan Deo</div>
-        <div><i class="fa fa-caret-down"></i></div>
-    </div>
+<div class="navigation bg-primary navbar-dark">
+    <ul class="nav">
+        <li class="nav-item">
+            <span class="nav-link">Dashboard</span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link">Company Info</span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link active">Employee Info</span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link">Job Portal</span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link">Attendance</span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link">Payroll</span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link">Benefits</span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link">Policies</span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link">Settings</span>
+        </li>
+    </ul>
 </div>

@@ -1,0 +1,37 @@
+.toolbar{
+    background-color: #1976d2;
+    display: flex;
+    height: 48px;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    
+    .title{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .fa-users{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .fa-user-circle{ font-size: 22px; margin-right: 12px; }
+
+    .date-cls{
+        //font-size: 12px;
+        padding: 0 8px;
+        border: 2px solid #fff;
+        border-radius: 8px;
+    }
+
+    .icon-wrapper{
+        border-radius: 50%;
+        background-color: #0357ac;
+        padding: 4px 10px;
+    }
+
+    .date-cls, .icon-wrapper{ margin-right: 18px; }
+    .user-name{ margin-right: 8px;}
+}

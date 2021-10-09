@@ -1,4 +1,33 @@
-.title {
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0!important;
+
+    .btn{
+        border-radius: 16px;
+        padding: 2px 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-primary{ margin-right: 12px; }
+
+    .title-btn-wrapper{
+        display: flex; 
+        justify-content: flex-end;
+
+        @media(max-width: 576px){
+            margin-top: 12px;
+            justify-content: flex-start!important;
+        }
+    }
+
+    .no-margin{ padding: 0!important; }
+}
+
+.title>span {
     background-color: rgb(129, 195, 218);
     color: #fff;
     padding: 4px 8px;

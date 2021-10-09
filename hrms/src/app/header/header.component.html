@@ -1,16 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand">
             <i class="fa fa-users"></i>
             <span class="title"> DigiHRMS </span>
         </a>
 
+        <!-- hamburger menu icon to show on smaller screens -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- collapsible navbar from bootstrap -->
         <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mt-4 mt-lg-0">
                 <li class="nav-item">
                     <div class="icon-wrapper"><i class="fa fa-search"></i></div>
                     <div class="resp-menu-names">Search</div>
@@ -39,6 +42,8 @@
 
 <div class="navigation bg-primary navbar-dark">
     <ul class="nav">
+
+        <!-- nav items and respective icons -->
         <li class="nav-item" *ngFor="let nav of navigationList">
             <span class="nav-link" [ngClass]="{'active': nav=='Employee Info'}">
                 <i class="fa fa-th-large" *ngIf="nav=='Dashboard'"></i>
@@ -55,11 +60,13 @@
         </li>
     </ul>
 
+    <!-- "more menu" -->
     <div class="nav-link more-cls dropdown">
         <span class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             More
         </span>
 
+        <!-- show only those nav items which are overflowing nav bar -->
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li class="dropdown-item" *ngFor="let more of overflowed" [ngClass]="{'active': more=='Employee Info'}">
                 <i class="fa fa-th-large" *ngIf="more=='Dashboard'"></i>

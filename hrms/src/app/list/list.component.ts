@@ -17,12 +17,15 @@ export class ListComponent implements OnInit {
   }
 
   getMockData(page=1, userList=[]){
+    //get first page by API call
     this.http.get("https://reqres.in/api/users?page=" + page).subscribe(response => {
         userList = userList.concat(response["data"]);
   
+        //recursively call getMockData until all current page = total number of pages
         if (response["page"] < response["total_pages"])
           this.getMockData(page + 1, userList);
         else {
+          //if all pages are fetched, map static user roles
           for(let i=0; i<userList.length; i++){
             if(i%5 == 0) userList[i]["role"] = "Management";
             else if(i%5 == 1) userList[i]["role"] = "Developer";

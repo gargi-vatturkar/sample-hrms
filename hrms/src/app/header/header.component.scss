@@ -56,12 +56,29 @@
 }
 
 .navigation{
-    padding-top: 56px;
+    padding: 56px 16px 0 0;
     position: fixed;
     width: 100%;
     z-index: 99;
-    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-    .nav-link{ color: #fff!important; }
-    .active{ background-color: #d6f4ff; color: #0d6efd!important; border-radius: 8px 8px 0 0; }
+    .more-cls{ 
+        visibility: hidden;     
+        display: flex;
+        align-items: flex-end; 
+    }
+    .nav-link{ color: #fff; }
+    .active{ 
+        background-color: #d6f4ff; 
+        color: #0d6efd!important; 
+        border-radius: 8px 8px 0 0; 
+        .fa{ color: #0d6efd!important; }
+    }
+
+    .nav{
+        height: 40px;
+        overflow-y: hidden;
+    }
 }

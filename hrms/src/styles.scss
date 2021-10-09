@@ -66,3 +66,16 @@ body{
     width: 100%;
     border-radius: 8px;
 }
+
+.dropdown-menu{
+    background-color: #0d6efd!important;
+    padding: 0!important;
+}
+
+.dropdown-item, .dropdown-item .fa{
+    color: #fff!important;
+}
+
+.nav-item .fa, .dropdown-item .fa{
+    margin-right: 4px;
+}
